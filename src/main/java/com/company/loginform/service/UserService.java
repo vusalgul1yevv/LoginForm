@@ -1,7 +1,8 @@
 package com.company.loginform.service;
+import com.company.loginform.entity.User;
+import org.springframework.stereotype.Service;
 
-import com.company.loginform.dto.UserDto;
-
+@Service
 public interface UserService {
-    UserDto createUser(UserDto userDto);
+    User createUser(User user);
 }
