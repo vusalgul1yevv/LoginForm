@@ -1,29 +1,17 @@
 package com.company.loginform.dto;
 
-public class UserDto {
-    private int id;
+public class UserDTO {
     private String name;
     private String lastname;
     private String email;
-    private String password;
 
-    public UserDto() {
+    public UserDTO() {
     }
 
-    public UserDto(int id, String name, String lastname, String email, String password) {
-        this.id = id;
+    public UserDTO(String name, String lastname, String email){
         this.name = name;
         this.lastname = lastname;
         this.email = email;
-        this.password = password;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -34,10 +22,6 @@ public class UserDto {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
     public String getLastname() {
         return lastname;
     }
@@ -46,25 +30,20 @@ public class UserDto {
         this.lastname = lastname;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     public void setEmail(String email) {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     @Override
     public String toString() {
-        return "UserDto{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+        return "UserDTO{" +
+                "name='" + name + '\'' +
+                ", lastname='" + lastname + '\'' +
                 ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
                 '}';
     }
 }
